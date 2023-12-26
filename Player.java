@@ -2,6 +2,8 @@ import java.util.Random;
 
 public class Player {
 
+      private String name; // New field to store the player's name
+
       private int health;
 
       private int attack;
@@ -11,13 +13,18 @@ public class Player {
       public Player() {
       }
 
-      public Player(int health, int attack, int strength) {
+      public Player(String name, int health, int attack, int strength) {
+            this.name = name;
             this.health = health;
             this.attack = attack;
             this.strength = strength;
       }
 
       // Getter methods
+      public String getName() {
+            return this.name;
+      }
+
       public int getHealth() {
             return this.health;
       }
@@ -31,11 +38,11 @@ public class Player {
       }
 
       // Simulate rolling a 6-sided die
-      private int rollDie() {
+      public int rollDie() {
             Random random = new Random();
 
             return random.nextInt(6) + 1;
       }
 
-      
+
 }
