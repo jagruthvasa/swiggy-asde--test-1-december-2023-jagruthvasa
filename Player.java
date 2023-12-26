@@ -44,7 +44,13 @@ public class Player {
             return random.nextInt(6) + 1;
       }
 
-
+      // Method to apply damage to the player
+      public void takeDamage(int damage) {
+           this.health -= damage;
+            if (this.health < 0) {
+                  this.health = 0;
+            }
+      }
 
       // Check if the player is alive
       public boolean isAlive() {
