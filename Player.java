@@ -45,4 +45,9 @@ public class Player {
       }
 
 
+
+      // Check if the player is alive
+      public boolean isAlive() {
+            return this.health > 0;
+      }
 }
