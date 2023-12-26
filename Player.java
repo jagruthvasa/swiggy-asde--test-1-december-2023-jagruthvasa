@@ -30,5 +30,12 @@ public class Player {
             return this.attack;
       }
 
+      // Simulate rolling a 6-sided die
+      private int rollDie() {
+            Random random = new Random();
+
+            return random.nextInt(6) + 1;
+      }
+
       
 }
