@@ -1,11 +1,15 @@
+import java.util.Random;
+
 public class Player {
+
       private int health;
 
       private int attack;
 
       private int strength;
 
-      public Player() {};
+      public Player() {
+      }
 
       public Player(int health, int attack, int strength) {
             this.health = health;
@@ -13,12 +17,18 @@ public class Player {
             this.strength = strength;
       }
 
-      public void attack(Player player) {
-            // attack code
+      // Getter methods
+      public int getHealth() {
+            return this.health;
       }
 
-
-      public void defened(Player player) {
-            // defend code
+      public int getStrength() {
+            return this.strength;
       }
+
+      public int getAttack() {
+            return this.attack;
+      }
+
+      
 }
