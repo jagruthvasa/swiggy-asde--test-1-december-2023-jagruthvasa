@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Player {
+public class  Player implements Playable {
 
       private String name; // New field to store the player's name
 
