@@ -1,4 +1,6 @@
 public class MatchSimulator {
+
+      // Start a match between two players
       public void startMatch(Player playerA, Player playerB) {
             Player attacker = (playerA.getHealth() < playerB.getHealth()) ? playerA : playerB;
             Player defender = (attacker == playerA) ? playerB : playerA;
@@ -9,6 +11,7 @@ public class MatchSimulator {
             System.out.println(winner.getName() + " wins!");
       }
 
+      // Simulate an attack between two players
       private void simulateAttack(Player attacker, Player defender) {
             if (!attacker.isAlive() || !defender.isAlive()) {
                   return;
