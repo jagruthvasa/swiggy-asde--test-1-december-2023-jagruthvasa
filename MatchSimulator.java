@@ -21,8 +21,8 @@ public class MatchSimulator {
             int attackRoll = attacker.rollDie();
             int defendRoll = defender.rollDie();
 
-            System.out.print("attackRoll: " + attackRoll);
-            System.out.print(" defendRoll: " + defendRoll);
+            System.out.print(" attacked die value: " + attackRoll);
+            System.out.print(" defend die value: " + defendRoll);
 
             // Calculate damage and defense
             int damage = attackRoll * attacker.getAttack();
